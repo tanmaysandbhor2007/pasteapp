@@ -18,7 +18,7 @@ const Home = () => {
       title: title,
       content: value,
       _id: pasteId || Date.now().toString(36), // unique id
-      createdAt: new Date().toLocaltring(),
+      createdAt: new Date().toISOString(),
     };
 
     // console.log("Paste created:", paste);
