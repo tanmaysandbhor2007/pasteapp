@@ -81,8 +81,7 @@ const formattedDate = date.toLocaleString("en-US", options);
        return(
         <div className='paste_crd'>
         <h3>Title</h3>{Paste.title}
-        <h3>Content</h3>
-        {Paste.content}
+        
         <br></br>
         <button   className='dltbtn' onClick={ ()=>deletepaste(Paste._id)}>delete</button>
         <button className='cpybtn'onClick={() => copyToClipboard(Paste.content)}>copy</button>
